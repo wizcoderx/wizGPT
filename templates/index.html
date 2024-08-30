@@ -136,11 +136,11 @@
             </div>
 
             <div class="input_user w-full text-center my-[15%] pl-16">
-                <input type="text" name="" id=""
+                <input type="text" name="" id="input_question"
                     class=" focus:outline-none w-[60%] bg-chatblack-50 border border-gray-700 rounded-3xl py-4 px-4"
                     placeholder="Message wizGPT">
 
-                <button class="relative top-2 mx-3 -left-16 py-1 px-1 bg-white text-chatblack-50 rounded-3xl font-bold">
+                <button id="sendButton" class="relative top-2 mx-3 -left-16 py-1 px-1 bg-white text-chatblack-50 rounded-3xl font-bold">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="icon-2xl">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -158,16 +158,16 @@
         </div>
 
         <div class="right2 w-full flex flex-col items-center h-fit">
-            <div class="box1 p-7 flex justify-start items-center w-[40vw] space-x-6 ">
+            <div class="box1 m-auto p-7 flex justify-start items-center w-[40vw] space-x-6 ">
                 <img class="w-10" src="https://avatars.githubusercontent.com/u/67374665?v=4" alt="">
-                <div>What is chat GPT</div>
+                <div id="question2">What is chat GPT</div>
             </div>
             <div class="box2 p-7 flex justify-center items-center w-full space-x-6 bg-textblack-50">
                 <div class="box w-[36vw] flex justify-start space-x-6">
                     <img class="w-10 h-10" src="https://chatgpt.com/favicon.ico" alt="">
                     <div class="flex flex-col space-y-4">
-                        <div>What is chat GPT</div>
-                        <div>What is chat GPT</div>
+                        <div id="question1">What is chat GPT</div>
+                        <div id="solution">What is chat GPT</div>
                     </div>
 
                 </div>
@@ -196,6 +196,13 @@
 
         </div>
     </div>
+
+<!--This part of code include all the javascripts used in this wizGPT-->
+
+<script src="/static/js/scripts.js">
+
+</script>
+
 </body>
 
 </html>

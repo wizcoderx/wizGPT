@@ -7,8 +7,10 @@ def hello_world():
 
 @app.route('/api', methods=["GET","POST"])
 def qa():
-    if request.method == "GET":
-        data = {"result": "This is my first project created using chatgpt"}
+    if request.method == "POST":
+        print(request.json)
+        question = request.json.get("question")
+        data = {"result": f'Answer of the asked prompt is {question}'}
         return jsonify(data)
 
 app.run(debug=True)
