@@ -1,0 +1,3 @@
+flask
+Flask-PyMongo
+google-generativeai # Adjust the version according to the latest available
