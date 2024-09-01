@@ -46,7 +46,7 @@ from flask_pymongo import PyMongo
 import google.generativeai as genai
 import os, time
 
-genai.configure(api_key="AIzaSyCxEGZRzw3bKFo_SBhxmCFWdO322ierrWI")
+genai.configure(api_key="YOUR_GEMINI_API KEY")
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 app = Flask(__name__)
